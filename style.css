@@ -55,10 +55,26 @@ body {
     border-radius: 4px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   
   li:hover {
     background-color: #f1f1f1;
     cursor: pointer;
+  }
+  
+  /* 삭제 버튼 스타일 */
+  .delete-btn {
+    margin-left: 10px;
+    padding: 5px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #ff1a1a;
   }
   
