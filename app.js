@@ -35,3 +35,14 @@ addTaskBtn.addEventListener('click', () => {
   // 입력 필드 초기화
   taskInput.value = '';
 });
+
+taskList.addEventListener('dblclick', (e) => {
+    if (e.target.tagName === 'SPAN') { // SPAN을 수정 대상으로 지정
+      const newTask = prompt("수정할 내용을 입력하세요:", e.target.textContent);
+      if (newTask !== null && newTask.trim() !== '') {
+        e.target.textContent = newTask;
+        e.target.style.textDecoration = 'none';  // 수정 후 취소선 제거
+        e.target.style.color = 'black';  // 수정 후 색상 원상복구
+      }
+    }
+  });
