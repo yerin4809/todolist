@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // 할 일 추가 기능
 addTaskBtn.addEventListener('click', () => {
     const taskText = taskInput.value.trim(); // 입력값 가져오기 및 공백 제거
@@ -32,7 +31,6 @@ addTaskBtn.addEventListener('click', () => {
     taskInput.value = '';
   });
   
-=======
 // HTML에서 요소 가져오기
 const taskInput = document.getElementById('taskInput');
 const addTaskBtn = document.getElementById('addTaskBtn');
@@ -81,4 +79,3 @@ taskList.addEventListener('dblclick', (e) => {
       }
     }
   });
->>>>>>> 할-일-기능
