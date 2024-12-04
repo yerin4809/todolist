@@ -10,4 +10,11 @@ addTaskBtn.addEventListener('click', () => {
   li.textContent = taskText;
   taskList.appendChild(li);
   taskInput.value = '';
+
+  taskList.addEventListener('click', (e) => {
+    if (e.target.tagName === 'LI') {
+      e.target.remove();
+    }
+  });
+  
 });
